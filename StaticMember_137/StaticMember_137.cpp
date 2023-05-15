@@ -25,5 +25,5 @@ void mahasiswa::printAll() {
 }
 int main()
 {
-
+	mahasiswa mhs1("Lia Kurnia");
 }
