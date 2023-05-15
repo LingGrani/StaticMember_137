@@ -12,7 +12,7 @@ public:
 	void isiData();
 };
 //definisi member function
-angka::angka(int i) {
+angka::angka(int i) { //Constructor
 	panjang = i;
 	arr = new int[i];
 	isiData();
@@ -37,13 +37,14 @@ void angka::isiData() {
 	{
 		cout << i << " = ";
 		cin >> arr[i];
-		cout << endl;
 	}
+	cout << endl;
+
 }
 
 int main() {
 	angka belajarcpp(3); //Constructor Dipanggil
-	angka* ptrBelajarcpp = new angka(5); //Constructor Dipanggil
+	angka *ptrBelajarcpp = new angka(5); //Constructor Dipanggil
 	delete ptrBelajarcpp; //Destructor Dipanggil
 
 	return 0;
